@@ -1,44 +1,4 @@
-// Theme Management with LocalStorage
-const lightModeButton = document.querySelector(".theme-toggle-light");
-const darkModeButton = document.querySelector(".theme-toggle-dark");
 
-// Load saved theme from localStorage
-function loadSavedTheme() {
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme === 'dark') {
-        document.body.classList.add('dark');
-        lightModeButton.style.display = "none";
-        darkModeButton.style.display = "block";
-    } else {
-        document.body.classList.remove('dark');
-        lightModeButton.style.display = "block";
-        darkModeButton.style.display = "none";
-    }
-}
-
-// Save theme to localStorage
-function saveTheme(theme) {
-    localStorage.setItem('theme', theme);
-}
-
-// Theme Toggle Functionality
-lightModeButton.addEventListener("click", () => {
-    document.body.classList.add("dark");
-    lightModeButton.style.display = "none";
-    darkModeButton.style.display = "block";
-    saveTheme('dark');
-});
-
-darkModeButton.addEventListener("click", () => {
-    document.body.classList.remove("dark");
-    darkModeButton.style.display = "none";
-    lightModeButton.style.display = "block";
-    saveTheme('light');
-});
-
-// Load theme on page load
-loadSavedTheme();
 // 预加载器已移除：不再在脚本中控制 `.pre-loader` 或在加载期间禁止滚动。
 
 // Mobile Menu Toggle
