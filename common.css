@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* CSS Variables */
-:root{
-    --black:#000;
-    --white:#fff;
-    --gray:#333;
-    --primary:#8BFBFF;
-    --secondary:#fdbb79;
-    --third:#FF602A;
-    --grey-text:rgba(255, 255, 255, 0.8);
-    /* 模态相关变量：用于不同主题下的弹框背景与文本颜色 */
-    --modal-bg: rgb(15, 15, 15);
-    --modal-text: #fff;
-    --modal-border: rgba(255, 255, 255, 0.1);
-}
 
 /* Global Styles */
 *{
@@ -22,23 +8,19 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: var(--black);
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+:root{
+    --black:#433930;
+    --white:#1b1b1b;
+    --gray:#333;
+    --primary:#E0B936;
+    --secondary:#fdbb79;
+    --third:#FF602A;
+    --grey-text:rgba(87, 72, 72, 0.8);
 }
 
-body.dark{
-    --black:#fff;
-    --white:#000;
-    --gray:#333;
-    --secondary:#8BFBFF;
-    --primary:#fb9938;
-    --third:#FF602A;
-    --grey-text: rgba(47, 47, 47, 0.8);
-    --modal-bg: rgb(255, 255, 255);
-    --modal-text: #000;
-    --modal-border: rgba(0, 0, 0, 0.1);
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 body.overflow{
@@ -54,40 +36,6 @@ li{
 }
 
 
-
-/* Theme Toggle Buttons */
-.theme-toggle-light{
-    position: fixed;
-    top: 200px;
-    right: 10px;
-    z-index: 10;
-    border: none;
-    background-color: transparent;
-    animation: rotate 2s linear infinite;
-    cursor: pointer;
-}
-
-.theme-toggle-light i{
-    font-size: 30px;
-    color: var(--white);
-}
-
-.theme-toggle-dark{
-    display: none;
-    position: fixed;
-    top: 200px;
-    right: 10px;
-    z-index: 10;
-    border: none;
-    background-color: transparent;
-    animation: rotate 2s linear infinite;
-    cursor: pointer;
-}
-
-.theme-toggle-dark i{
-    font-size: 30px;
-    color: var(--white);
-}
 
 /* Header */
 header{
@@ -110,11 +58,6 @@ header{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 999;
     transition: all 0.3s ease;
-}
-
-body.dark .navbar{
-    background-color: rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -313,7 +256,6 @@ body.dark .navbar{
 footer{
    
     width: 100%;
-    background-color: var(--black);
     color: var(--white);
     text-align: center;
     padding: 20px;
