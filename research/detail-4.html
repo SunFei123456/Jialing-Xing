@@ -150,20 +150,6 @@
 </head>
 
 <body>
-    <!-- Prevent Theme Flash -->
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                document.body.classList.add('dark');
-            }
-        })();
-    </script>
-
-
-    <button class="theme-toggle-light" aria-label="Switch to dark mode"><i class="fas fa-sun"></i></button>
-    <button class="theme-toggle-dark" aria-label="Switch to light mode"><i class="fas fa-moon"></i></button>
-
     <header>
         <nav class="navbar">
             <h1><a href="../index.html" class="logo">Jialing Xing</a></h1>
@@ -212,8 +198,9 @@
         </footer>
     </header>
 
-    <script src="../main.js"></script>
+      
     <script src="../js/image-viewer.js"></script>
+    <script src="../main.js"></script>
 </body>
 
 </html>

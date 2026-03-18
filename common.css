@@ -83,7 +83,7 @@ header{
 
 .navigation-menu li a.active{
     padding-bottom: 8px;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--white);
 }
 
 .mobile-menu-toggle{
@@ -196,7 +196,11 @@ header{
 /* Responsive - Mobile Navigation Only */
 @media screen and (max-width:905px) {
     .navbar {
-        padding: 20px 40px;
+        padding: 20px 16px;
+    }
+    
+    .logo{
+        font-size: 20px;
     }
     
     .navigation-menu{
@@ -214,7 +218,7 @@ header{
         width: 100vw;
         height: 110vh;
         z-index: 100;
-        background-color: var(--black);
+        background-color: var(--secondary);
     }
     
     .navigation-menu.dis{
